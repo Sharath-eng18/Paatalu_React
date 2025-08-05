@@ -24,6 +24,3 @@
 - **Responsive Design Principles**
 
 ---
-
-## Built under LetsUpgrade SAP Program
-
