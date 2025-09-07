@@ -1,0 +1,130 @@
+.main-content {
+  min-height: 100vh;
+  padding-top: 100px; /* Account for fixed header */
+  padding-bottom: 120px; /* Account for bottom player */
+  position: relative;
+  z-index: 1;
+}
+
+.content-container {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 2rem;
+  animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Smooth fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .main-content {
+    padding-top: 80px;
+    padding-bottom: 100px; /* Match new 90px player height */
+  }
+  
+  .content-container {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    padding-top: 70px;
+    padding-bottom: 80px; /* Match new 70px player height */
+  }
+  
+  .content-container {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .main-content {
+    padding-top: 65px;
+    padding-bottom: 70px; /* Match new 60px player height */
+  }
+  
+  .content-container {
+    padding: 0.75rem;
+  }
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #DB29FF, #6966FF);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #6966FF, #DB29FF);
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection styling */
+::selection {
+  background: rgba(219, 41, 255, 0.3);
+  color: white;
+}
+
+::-moz-selection {
+  background: rgba(219, 41, 255, 0.3);
+  color: white;
+}
+
+/* Focus styles for accessibility */
+*:focus {
+  outline: 2px solid rgba(219, 41, 255, 0.5);
+  outline-offset: 2px;
+}
+
+/* Button and interactive element focus */
+button:focus,
+input:focus {
+  outline: 2px solid rgba(219, 41, 255, 0.6);
+  outline-offset: 2px;
+}
+
+/* Ensure particles container covers full screen */
+.particles-container {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Prevent content from interfering with particles */
+.particles-container canvas {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}

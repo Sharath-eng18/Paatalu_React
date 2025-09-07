@@ -1,0 +1,141 @@
+/* Modern Responsive Design System */
+
+/* Responsive typography scale */
+@media (max-width: 1440px) {
+  html { font-size: 16px; }
+}
+
+@media (max-width: 1200px) {
+  html { font-size: 15px; }
+}
+
+@media (max-width: 768px) {
+  html { font-size: 14px; }
+  
+  :root {
+    --border-radius-sm: 6px;
+    --border-radius-md: 10px;
+    --border-radius-lg: 14px;
+    --border-radius-xl: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  html { font-size: 13px; }
+  
+  :root {
+    --border-radius-sm: 6px;
+    --border-radius-md: 8px;
+    --border-radius-lg: 12px;
+    --border-radius-xl: 16px;
+  }
+}
+
+@media (max-width: 360px) {
+  html { font-size: 12px; }
+}
+
+/* Container responsive behavior */
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+/* Responsive spacing utilities */
+@media (max-width: 768px) {
+  .space-y-8 > * + * { margin-top: 1.5rem; }
+  .space-y-6 > * + * { margin-top: 1.25rem; }
+  .space-y-4 > * + * { margin-top: 1rem; }
+}
+
+@media (max-width: 480px) {
+  .space-y-8 > * + * { margin-top: 1.25rem; }
+  .space-y-6 > * + * { margin-top: 1rem; }
+  .space-y-4 > * + * { margin-top: 0.75rem; }
+}
+
+/* Responsive glassmorphism adjustments */
+@media (max-width: 768px) {
+  .glass {
+    backdrop-filter: blur(15px) saturate(160%);
+  }
+  
+  .glass-strong {
+    backdrop-filter: blur(20px) saturate(180%);
+  }
+}
+
+@media (max-width: 480px) {
+  .glass {
+    backdrop-filter: blur(12px) saturate(140%);
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .glass-strong {
+    backdrop-filter: blur(15px) saturate(160%);
+    background: rgba(255, 255, 255, 0.15);
+  }
+}
+
+/* Enhanced focus for touch devices */
+@media (hover: none) and (pointer: coarse) {
+  button:focus,
+  input:focus,
+  a:focus {
+    outline: 3px solid rgba(219, 41, 255, 0.8);
+    outline-offset: 3px;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  :root {
+    --glass-background: rgba(255, 255, 255, 0.15);
+    --glass-border: rgba(255, 255, 255, 0.25);
+    --text-primary: #ffffff;
+    --text-secondary: rgba(255, 255, 255, 0.85);
+  }
+}
+
+/* Dark mode enhancements (default is dark) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --shadow-soft: 0 8px 32px rgba(0, 0, 0, 0.4);
+    --shadow-medium: 0 12px 40px rgba(0, 0, 0, 0.5);
+    --shadow-strong: 0 20px 60px rgba(0, 0, 0, 0.6);
+  }
+}
+
+/* Print styles */
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  
+  .header,
+  .bottom-player {
+    display: none !important;
+  }
+  
+  .main-content {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
