@@ -1,13 +1,16 @@
 .header {
+    margin :10px 10px ;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 96vw;
     z-index: 1100;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     background: rgba(15, 15, 20, 0.85);
     backdrop-filter: blur(20px) saturate(180%);
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    border: 2px solid rgb(57, 19, 60);
+    border-radius: 10px;
 }
 
 .header.scrolled {
