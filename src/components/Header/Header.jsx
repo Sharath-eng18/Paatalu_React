@@ -31,7 +31,7 @@ const Header = () => {
         
         <div className="header-content">
           <a href="/" className="logo">
-            <span className="logo-icon">🎵</span>
+            <span className="logo-icon"><img src="/favicon.png" alt="" /></span>
             <span className="logo-text">Paatalu</span>
           </a>
 
