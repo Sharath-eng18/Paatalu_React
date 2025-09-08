@@ -14,6 +14,36 @@ const sampleSongs = [
     audioSrc: '/songs/PremaVelluva.mp3'
   },
   {
+    title: 'Nuvvunte Chaley',
+    artist: 'Vivek-Mervin',
+    coverArt: 'https://a10.gaanacdn.com/gn_img/albums/NOXWVRgWkq/XWVyO26Z3k/size_m.jpg',
+    audioSrc: '/songs/NuvvunteChaley.mp3'
+  },
+  {
+    title: 'Mallika Gandha',
+    artist: 'Sid Sriram',
+    coverArt: 'https://c.saavncdn.com/605/Mallika-Gandha-From-Telusu-Kada-Telugu-2025-20250728192014-500x500.jpg',
+    audioSrc: '/songs/MallikaGandha.mp3'
+  },
+  {
+    title: 'Sahiba',
+    artist: 'Aditya Rikhari',
+    coverArt: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBNAb1OyAtvkADy2m8hjSBmEqmtV5LlJUANQ&s',
+    audioSrc: '/songs/Sahiba.mp3'
+  },
+  {
+    title: 'Viral Vayyari',
+    artist: 'Devi Sri Prasad',
+    coverArt: 'https://i.ytimg.com/vi/QtBzQ6U6t6M/maxresdefault.jpg',
+    audioSrc: '/songs/ViralVayyari.mp3'
+  },
+  {
+    title: 'Nuvve Naku Lokam',
+    artist: 'Karthik',
+    coverArt: 'https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/40/a8/8e/40a88e9d-cb50-61ac-b219-d467452ff9b4/8903431015716_cover.jpg/1200x630bf-60.jpg',
+    audioSrc: '/songs/NuvveNakuLokam.mp3'
+  },
+  {
     title: 'Kadalalle',
     artist: 'Sid Sriram',
     coverArt: 'https://i.scdn.co/image/ab67616d00001e0294645a119b4c0576211180b9',
