@@ -22,7 +22,7 @@ const sampleSongs = [
   {
     title: 'Mallika Gandha',
     artist: 'Sid Sriram',
-    coverArt: 'https://c.saavncdn.com/605/Mallika-Gandha-From-Telusu-Kada-Telugu-2025-20250728192014-500x500.jpg',
+    coverArt: 'https://i.ytimg.com/vi/lI_q7M98SyQ/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBolU7c4BgScBtOLp7pgZr5a3uxsQ',
     audioSrc: '/songs/MallikaGandha.mp3'
   },
   {
