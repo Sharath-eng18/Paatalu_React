@@ -22,5 +22,3 @@
 - **JavaScript (ES6+)**
 - **CSS3 / Styled Components**
 - **Responsive Design Principles**
-
----
