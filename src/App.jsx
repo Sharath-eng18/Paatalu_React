@@ -68,12 +68,6 @@ const sampleSongs = [
     audioSrc: '/songs/SongForDenise.mp3'
   },
   {
-    title: 'Gelupuleni Samaram',
-    artist: 'Ramya Behra',
-    coverArt: 'https://pendujatt.com.se/uploads/album/mahanati-mickey-j-meyer.webp',
-    audioSrc: '/songs/GelupuleniSamaram.mp3'
-  },
-  {
     title: 'Pileche',
     artist: 'Mahesh Babu',
     coverArt: 'https://a10.gaanacdn.com/gn_img/albums/D0PKLqr3Gl/PKLA7nGn3G/size_m.jpg',
