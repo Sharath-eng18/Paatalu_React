@@ -126,7 +126,7 @@ function App() {
     <>
       <Header />
       <Aurora
-        colorStops={["#DB29FF", "#6966FF", "#005EF5"]}
+        colorStops={["#cb52e4ff", "#6966FF", "#005EF5"]}
         blend={0.79}
         amplitude={3}
         speed={0.6}
