@@ -102,7 +102,20 @@ const sampleSongs = [
 
 function App() {
   const [currentSongIndex, setCurrentSongIndex] = useState(0);
-  
+  const [favorites, setFavorites] = useState(new Set());
+
+  const toggleFavorite = (index) => {
+    setFavorites((prev) => {
+      const next = new Set(prev);
+      if (next.has(index)) {
+        next.delete(index);
+      } else {
+        next.add(index);
+      }
+      return next;
+    });
+  };
+
   const handleNext = () => {
     setCurrentSongIndex((prevIndex) => 
       prevIndex === sampleSongs.length - 1 ? 0 : prevIndex + 1
@@ -138,6 +151,8 @@ function App() {
       </main>
       <BottomPlayer
         {...sampleSongs[currentSongIndex]}
+        isFavorite={favorites.has(currentSongIndex)}
+        onToggleFavorite={() => toggleFavorite(currentSongIndex)}
         onNext={handleNext}
         onPrevious={handlePrevious}
       />
