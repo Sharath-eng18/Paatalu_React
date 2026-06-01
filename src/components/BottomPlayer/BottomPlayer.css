@@ -199,6 +199,17 @@
   transform: scale(1.1);
 }
 
+.favorite-btn.active {
+  background: rgba(219, 41, 255, 0.25);
+  color: #DB29FF;
+  border-color: rgba(219, 41, 255, 0.5);
+}
+
+.favorite-btn.active:hover {
+  transform: scale(1.15);
+  background: rgba(219, 41, 255, 0.35);
+}
+
 .player-center {
   flex: 1;
   display: flex;

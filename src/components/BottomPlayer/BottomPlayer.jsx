@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './BottomPlayer.css';
 
-const BottomPlayer = ({ title, artist, coverArt, audioSrc, onNext, onPrevious }) => {
+const BottomPlayer = ({ title, artist, coverArt, audioSrc, onNext, onPrevious, isFavorite, onToggleFavorite }) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
@@ -98,8 +98,8 @@ const BottomPlayer = ({ title, artist, coverArt, audioSrc, onNext, onPrevious })
             <h4 className="song-title">{title}</h4>
             <p className="song-artist">{artist}</p>
           </div>
-          <button className="favorite-btn">
-            <span>♡</span>
+          <button className={`favorite-btn ${isFavorite ? 'active' : ''}`} onClick={onToggleFavorite} title={isFavorite ? 'Remove from favorites' : 'Add to favorites'}>
+            <span>{isFavorite ? '♥' : '♡'}</span>
           </button>
         </div>
         
